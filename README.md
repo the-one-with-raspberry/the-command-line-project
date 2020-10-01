@@ -1,5 +1,3 @@
-# the-command-line-project
-
 # Copyright © Raspberry Pi
 
 Th-wl400 READ ME
