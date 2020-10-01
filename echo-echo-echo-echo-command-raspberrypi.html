@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi, Powershell and Command Prompt echoes a command | Commands category</title>
+</head>
+
+<body>
+    <p class="other">Make the command prompts echo:</p>
+    <p id="cmd">echo Echo .. echo .. echo .. echo</p>
+    <canvas id="writingCanvasForEcho" width="1050" height="50" style="color: black; border: 2px solid black;"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("writingCanvasForEcho");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 9999, 999);
+        ctx.font = "30px monospace";
+        ctx.fillStyle = "#FFFFFF"
+        ctx.fillText("echo Echo .. echo .. echo .. echo", 10, canvas.height / 1.5);
+    </script>
+</body>
+
+</html>

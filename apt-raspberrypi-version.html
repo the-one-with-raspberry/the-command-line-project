@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ANSI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APT version | Raspberry Pi category</title>
+    <link rel="stylesheet" href="css/apt-raspberrypi-version.css">
+</head>
+
+<body>
+
+    <p class="other">Apt version interactive command:</p>
+    <p id="cmd">apt --version && echo This is your apt version.</p>
+    <canvas id="writingCanvasForApt" width="1000" height="50" style="color: black; border: 2px solid black;"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("writingCanvasForApt");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 999, 999);
+        ctx.font = "30px monospace";
+        ctx.fillStyle = "#FFFFFF"
+        ctx.fillText("apt --version && echo This is your apt version.", 10, canvas.height / 1.5);
+    </script>
+
+</body>
+
+</html>

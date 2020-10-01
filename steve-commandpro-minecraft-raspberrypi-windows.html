@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Steve is a command pro! | Raspberry Pi category</title>
+    <link rel="stylesheet" href="steve-commandpro-minecraft-raspberrypi.css">
+</head>
+
+<body>
+    <p class="other">Steve discuss with server admin (command chat) (works with Windows command prompt)*:</p>
+    <p id="cmd">echo //wand godLevel && echo /tag @s add give_upgrades && echo Gave 12* [upgrade] to Steve</p>
+    <canvas id="writingCanvasForDiscuss" width="1555" height="50" style="color: black; border: 2px solid black;"></canvas>
+    <canvas id="response" width="600" height="50"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("writingCanvasForDiscuss");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 9999, 999);
+        ctx.font = "30px monospace";
+        ctx.fillStyle = "#FFFFFF"
+        ctx.fillText("echo //wand godLevel && echo /tag @s add give_upgrades && echo Gave 12* [upgrade] to Steve", 10, canvas.height / 1.5);
+    </script>
+</body>
+
+</html>

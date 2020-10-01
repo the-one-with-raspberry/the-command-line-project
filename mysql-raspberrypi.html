@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL for Raspberry Pi | Raspberry Pi category</title>
+    <link rel="stylesheet" href="css/mysql-raspberrypi.css">
+</head>
+
+<body>
+    <p class="other">MySQL activate interactive command:</p>
+    <p id="cmd">echo Mysql is activating... && sudo mysql -u root -p</p>
+    <canvas id="writingCanvasForMysql" width="1050" height="50" style="color: black; border: 2px solid black;"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("writingCanvasForMysql");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 9999, 999);
+        ctx.font = "30px monospace";
+        ctx.fillStyle = "#FFFFFF"
+        ctx.fillText("echo Mysql is activating... && sudo mysql -u root -p", 10, canvas.height / 1.5);
+    </script>
+</body>
+
+</html>
