@@ -1,0 +1,13 @@
+p#cmd {
+    font-family: monospace;
+    background-color: #e7cdab;
+    height: 120;
+}
+
+p.other {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #deb887;
+}
